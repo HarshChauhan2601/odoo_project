@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Google Charts Loader -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- This is An End  -->
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ec3a451c3a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/myprofile.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+
+
+</head>
+
+<body>
+
+  <!-- THis is My Sidebar -->
+
+  <div class="sidebar">
+    <div class="sidebar-content">
+      <ul class="lists">
+        <li class="list">
+          <a href="#" class="nav-link" id="nav-active">
+            <i class="fa-solid fa-house"></i>
+            <span class="link">Dashboard</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="myprofile.html" class="nav-link">
+            <i class="fa-solid fa-user"></i>
+            <span class="link">My Profile</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="myplan.html" class="nav-link">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span class="link">My Plan</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="index.html" class="nav-link">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="link">Exit</span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- THis is An End to My Sidebar -->
+
+  <!-- This is My Main Dashboard Compnenets -->
+  <div class="profile">
+    <br>
+    <h1 style="text-align: left;">Hii, Harsh</h1>
+
+    <div class="dash-upper">
+      <div class="card">
+        <div class="card-round"><i class="fa-solid fa-chart-simple"></i></div>
+        <h3>42%</h3>
+        <small>Plan Succes Rate</small>
+      </div>
+
+      <div class="card">
+        <div class="card-round"><i class="fa-solid fa-chart-pie"></i></div>
+        <h3>2%</h3>
+        <small>Progress</small>
+      </div>
+      <div class="card">
+        <div class="card-round"><i class="fa-solid fa-dumbbell"></i></div>
+        <h3>32%</h3>
+        <small>Calories Burnt</small>
+      </div>
+      <div class="card">
+        <div class="card-round"><i class="fa-solid fa-circle-info"></i></div>
+        <h3>11%</h3>
+        <small>Stamina</small>
+      </div>
+    </div>
+
+    <div class="dash_lower">
+
+      <div id="chart_div"></div>
+      <div id="piechart"></div>
+
+    </div>
+
+
+  </div>
+  <!-- This is an End  -->
+
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Lower Body', 0.3],
+        ['Upper Body', 0.4],
+        ['Healing', 3],
+        ['meditation', 1],
+        ['Sleep', 7]
+      ]);
+
+      var options = {
+        title: 'Daily Fitness Routine'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Month', 'Nos. of Days', 'Diet Followed'],
+        ['March', 31, 26],
+        ['April', 30, 18],
+        ['May', 31, 10],
+        ['June', 30, 20]
+      ]);
+
+      var options = {
+        title: 'Diet Followed Performance',
+        hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
+        vAxis: { minValue: 0 }
+      };
+
+      var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+
+</body>
+
+</html>

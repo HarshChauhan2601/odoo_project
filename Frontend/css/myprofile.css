@@ -1,0 +1,220 @@
+:root{
+  --main-color:#29d978;
+  --primary:#f0fff7;
+  --black:#141414;
+  --white:#fff;
+  --bg:#f2f2f2;
+  --light-black:#666;
+}
+
+body{
+    background-color: #F1F5FF;
+}
+
+
+/* THis are my font awesome icons styles */
+
+.fa-house{
+  color: orange;
+}
+
+.fa-bell{
+  color:crimson;
+}
+
+.fa-user{
+  color:mediumseagreen;
+}
+
+.fa-right-from-bracket{
+  color: darkslategray;
+}
+
+.fa-calendar-days{
+  color: cadetblue;
+}
+/* This is An end */
+
+  .logo .logo-name {
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+
+  }
+
+  .sidebar{
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: left;
+    
+    background-color: #fff;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+
+  .open .sidebar {
+    left: 0;
+  }
+  .sidebar .sidebar-content {
+    width: 90%;
+    height: 100%;
+    padding: 10px 0;
+  }
+  .sidebar-content .list {
+    list-style: none;
+  }
+  .list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 14px 0;
+    padding: 14px 12px;
+    border-radius: 26px;
+    text-decoration: none;
+     position: relative;
+  }
+  .lists .nav-link:hover {
+    background-color: #4070f4;
+    /* background-color: #f6f4f8; */
+  }
+
+  .nav-link .link {
+    font-size: 16px;
+    color:var( --black);
+
+    font-weight: 400;
+  }
+
+  .nav-link i{
+    margin-right: 0.7rem;
+  }
+
+
+
+  .lists .nav-link:hover .link {
+    color: #fff;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .open ~ .overlay {
+    opacity: 1;
+    left: 260px;
+    pointer-events: auto;
+  }
+
+#nav-active{
+    background-color: #4070f4;
+  }
+
+  #nav-active .link{
+    color: #fff;
+
+  }
+
+  /* This is My Profile Page */
+  .profile{
+    width: 70%;
+    height: fit-content;
+    padding: 25px all;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 300px;
+    margin-top: 3rem;
+}
+
+
+
+  .profile-left{
+    width: 35%;
+  }
+
+  #img_profile{
+    height: 80vh;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+  }
+  
+  .profile-right{
+    width: 50%;
+    max-height: 70vh;
+    background: white;
+     padding: 10px 20px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    transition: 0.5s ease-in-out;
+
+}
+
+.profile-right h1{
+  font-family: 'Untitled Serif';
+  font-size: 43px;
+  color: var(--main-color);
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed lightslategray;
+}
+
+
+
+/* This is My Just VIew Profile */
+.just_view_row{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.just_view_row i{
+    color: steelblue;
+    margin-right: 0.3rem;
+}
+ 
+
+
+.column{
+    flex-direction: column;
+    min-width: 40%;
+    margin: 1.5% 3%;
+}
+
+.just_view_row .column h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.just_view_row span{
+    color: darkslategray;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* This is A End to My Just View PRofile */
+
+/* This is Main Myprofile Section */
+
+/* This is AN End */
+
+
+
+
+  /* This is My Profile Page Ends Here */

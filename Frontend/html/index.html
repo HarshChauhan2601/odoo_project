@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Diet Planner</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#diet">Diet</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#review">Review</a>
+            <a href="login.html">LogIn</a>
+            <a href="dashboard.html">Dashboard</a>
+
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>welcome to the place of healthy food</h3>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading">About Us</h1>
+        <div class="row">
+            <div class="content">
+                <h3>Our Mission</h3>
+                <p>Welcome to Diet, your ultimate destination for personalized nutrition and health management. Our
+                    mission
+                    is to empower individuals to achieve their health and wellness goals through expert guidance,
+                    personalized diet plans, and holistic lifestyle approaches.</p>
+                <p>At Diet, we understand that every person is unique, and so are their nutritional needs. Whether
+                    you're
+                    looking to lose weight, manage a health condition, or simply adopt a healthier lifestyle, our team
+                    of
+                    nutritionists and health experts is dedicated to providing you with tailored solutions that fit your
+                    specific needs and preferences.</p>
+                <p>With a focus on evidence-based practices and ongoing support, we strive to make healthy living
+                    accessible
+                    and enjoyable for everyone. Our goal is not just to help you reach your immediate health goals but
+                    also
+                    to empower you with the knowledge and tools to sustain a healthy lifestyle long-term.</p>
+            </div>
+            <div class="image">
+                <img src="../images/about.jpg" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h1 class="heading">our services</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icon">
+                    <img src="../images/diet-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>
+                        Personalized Meal Planning
+                    </h3>
+                    <div class="line">
+                        <p>Our Personalized Meal Planning service crafts customized diet plans tailored to your unique
+                            dietary needs, preferences, and health goals.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Custom Diet Plans:
+                            </li>
+                            <li><i class="fas fa-check"></i>Nutritional Guidance:
+                            </li>
+                            <li><i class="fas fa-check"></i>Flexible Options:
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="../images/diet-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>
+                        Health Condition Management
+                    </h3>
+                    <div class="line">
+                        <p>Our Health Condition Management service provides specialized diet recommendations to help
+                            manage chronic conditions such
+                            as diabetes, hypertension, and heart disease.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Condition-Specific Diets
+                            </li>
+                            <li><i class="fas fa-check"></i>Expert Consultation
+                            </li>
+                            <li><i class="fas fa-check"></i>Holistic Approach
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon">
+                    <img src="../images/diet-2.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>
+                        Weight Management Programs
+                    </h3>
+                    <div class="line">
+                        <p>Our Weight Management Programs offer structured plans to help you achieve and maintain a
+                            healthy weight.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Personalized Plans
+                            </li>
+                            <li><i class="fas fa-check"></i>Behavioral Coaching
+                            </li>
+                            <li><i class="fas fa-check"></i>Fitness Integration
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="diet" id="diet">
+        <h1 class="heading">diet plan</h1>
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">
+                <img src="../images/diet-1.jpeg" alt="">
+                <h3>all</h3>
+            </li>
+            <li class="buttons" data-filter="breakfast">
+                <img src="../images/diet-2.jpeg" alt="">
+                <h3>breakfast</h3>
+            </li>
+            <li class="buttons" data-filter="lunch">
+                <img src="../images/diet-3.jpeg" alt="">
+                <h3>lunch</h3>
+            </li>
+            <li class="buttons" data-filter="dinner">
+                <img src="../images/diet-4.jpeg" alt="">
+                <h3>dinner</h3>
+            </li>
+        </ul>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <h1 class="heading">pricing plan</h1>
+        <div class="box-container">
+            <div class="box">
+                <h3 class="title">basic</h3>
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount">500</span>
+                    <span class="duration">/year</span>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>nutrition plan</li>
+                    <li><i class="fas fa-check"></i>training plan</li>
+                    <li><i class="fas fa-check"></i>body measurement</li>
+
+                </ul>
+                <p>30 days consultation</p>
+                <p>3 personal meetings</p>
+                <p>₹200 access to additional materials</p>
+                <button href="#" class="btn" onclick="pay_now();">purchase</button>
+            </div>
+
+            <div class="box">
+                <h3 class="title">standard</h3>
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount">900</span>
+                    <span class="duration">/year</span>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>nutrition plan</li>
+                    <li><i class="fas fa-check"></i>training plan</li>
+                    <li><i class="fas fa-check"></i>body measurement</li>
+
+                </ul>
+                <p>60 days consultation</p>
+                <p>5 personal meetings</p>
+                <p>₹300 access to additional materials</p>
+                <button class="btn" onclick="pay_now();">purchase</button>
+            </div>
+            <div class="box">
+                <h3 class="title">premium</h3>
+                <div class="price">
+                    <span class="currency">₹</span>
+                    <span class="amount">1500</span>
+                    <span class="duration">/year</span>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>nutrition plan</li>
+                    <li><i class="fas fa-check"></i>training plan</li>
+                    <li><i class="fas fa-check"></i>boby measurement</li>
+
+                </ul>
+                <p>100 days consultation</p>
+                <p>10 personal meetings</p>
+                <p>₹500 access to additional materials</p>
+                <button href="#" class="btn" onclick="pay_now();">purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="review">
+        <h1 class="heading">Client's Reviews</h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <p>"I have been using this diet plan service for six months now, and I couldn't be happier with the
+                        results. The personalized meal plans are easy to follow and have helped me achieve my fitness
+                        goals!"</p>
+                    <div class="user">
+                        <img src="../images/pic-1.jpeg" alt="Client 1">
+                        <div class="info">
+                            <h3>John Doe</h3>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>"The health condition management program has been a lifesaver for me. As someone with diabetes, I
+                        struggled to find a diet that worked. With expert guidance and personalized support, I feel more
+                        in
+                        control of my health."</p>
+                    <div class="user">
+                        <img src="../images/pic-2.jpeg" alt="Client 2">
+                        <div class="info">
+                            <h3>Jane Smith</h3>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>"I joined the weight management program to shed a few pounds before my wedding, and I'm amazed at
+                        how
+                        effective it has been. The combination of diet plans and fitness integration has transformed my
+                        lifestyle!"</p>
+                    <div class="user">
+                        <img src="../images/pic-3.jpeg" alt="Client 3">
+                        <div class="info">
+                            <h3>Michael Brown</h3>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>"The personalized meal plans are not only nutritious but also delicious! I love how the recipes
+                        are
+                        tailored to my preferences, making it easy to stick to my diet goals without feeling deprived."
+                    </p>
+                    <div class="user">
+                        <img src="../images/pic-4.jpeg" alt="Client 4">
+                        <div class="info">
+                            <h3>Sarah Johnson</h3>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>"After following the lunch plan recommendations, I feel more energized throughout the day. The
+                        meals
+                        are filling and satisfying, making it easier to focus on work without feeling sluggish."</p>
+                    <div class="user">
+                        <img src="../images/pic-5.jpeg" alt="Client 5">
+                        <div class="info">
+                            <h3>Emily Davis</h3>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>"I've tried several diet plans in the past, but none have been as effective as this one. The
+                        dinner
+                        options are flavorful and easy to prepare, perfect for someone with a busy schedule like mine."
+                    </p>
+                    <div class="user">
+                        <img src="../images/pic-6.jpeg" alt="Client 6">
+                        <div class="info">
+                            <h3>James Wilson</h3>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure for All Meals -->
+    <div id="mealModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Meal Plan</h2>
+            <p><strong>Breakfast (8:00 AM - 9:00 AM):</strong> Avocado Toast: Whole-grain toast topped with mashed
+                avocado,
+                a sprinkle of chia seeds, and a poached egg.</p>
+            <p><strong>Mid-Morning Snack (10:30 AM):</strong> Smoothie Bowl: Blended smoothie with spinach, banana,
+                berries,
+                and almond milk, topped with granola and fresh fruit.</p>
+            <p><strong>Lunch (12:30 PM - 1:30 PM):</strong> Grilled Chicken Salad: Mixed greens topped with grilled
+                chicken
+                breast, cherry tomatoes, cucumber, and a light vinaigrette.</p>
+            <p><strong>Afternoon Snack (3:00 PM):</strong> Greek Yogurt Parfait: Greek yogurt layered with honey, mixed
+                berries, and a handful of nuts.</p>
+            <p><strong>Dinner (6:30 PM - 7:30 PM):</strong> Baked Salmon: Baked salmon fillet served with steamed
+                broccoli
+                and quinoa.</p>
+            <p><strong>Evening Snack (8:30 PM):</strong> A handful of mixed nuts.</p>
+        </div>
+    </div>
+
+    <!-- Modal Structure for Breakfast -->
+    <div id="breakfastModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Breakfast Plan</h2>
+            <p><strong>Breakfast (8:00 AM - 9:00 AM):</strong> Avocado Toast: Whole-grain toast topped with mashed
+                avocado,
+                a sprinkle of chia seeds, and a poached egg.</p>
+            <p><strong>Mid-Morning Snack (10:30 AM):</strong> Smoothie Bowl: Blended smoothie with spinach, banana,
+                berries,
+                and almond milk, topped with granola and fresh fruit.</p>
+        </div>
+    </div>
+
+    <!-- Modal Structure for Lunch -->
+    <div id="lunchModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Lunch Plan</h2>
+            <p><strong>Lunch (12:30 PM - 1:30 PM):</strong> Grilled Chicken Salad: Mixed greens topped with grilled
+                chicken
+                breast, cherry tomatoes, cucumber, and a light vinaigrette.</p>
+            <p><strong>Afternoon Snack (3:00 PM):</strong> Greek Yogurt Parfait: Greek yogurt layered with honey, mixed
+                berries, and a handful of nuts.</p>
+        </div>
+    </div>
+
+    <!-- Modal Structure for Dinner -->
+    <div id="dinnerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Dinner Plan</h2>
+            <p><strong>Dinner (6:30 PM - 7:30 PM):</strong> Baked Salmon: Baked salmon fillet served with steamed
+                broccoli
+                and quinoa.</p>
+            <p><strong>Evening Snack (8:30 PM):</strong> A handful of mixed nuts.</p>
+        </div>
+    </div>
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i>home </a>
+                <a href="#about"><i class="fas fa-arrow-right"></i>about </a>
+                <a href="#services"><i class="fas fa-arrow-right"></i>services </a>
+                <a href="#diet"><i class="fas fa-arrow-right"></i>diet </a>
+                <a href="#blog"><i class="fas fa-arrow-right"></i>blog </a>
+                <a href="#reviews"><i class="fas fa-arrow-right"></i>reviews </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fas fa-phone"></i>7435071755 </a>
+                <a href="#"><i class="fas fa-phone"></i> 9426649937</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            </div>
+        </div>
+
+        <div class="credit">Created By <span>LJIETIANS</span> | All rights are reserved</div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

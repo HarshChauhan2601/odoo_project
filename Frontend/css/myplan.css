@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Poppins,sans-serif;
+    
+}
+.container{
+    border: 3px solid black;
+}
+.blue{
+    padding: 2rem;
+    height: 9em;
+    width: 60rem;
+    background-color: greenyellow;
+    border: 7px double green;
+    border-top: 0;
+    border-left: 0;
+    border-bottom-right-radius: 100%;
+}
+.calendar {
+    width: 100%;
+    margin: 20px auto;
+}
+.calendar th, .calendar td {
+    text-align: center;
+    padding: 10px;
+}
+.calendar .days th, .calendar .days td {
+    width: 14.28%;
+}
+.calendar .header {
+    background-color: #007bff;
+    color: white;
+}
+button{
+    border: 0;
+    background-color: transparent;
+    height: 2.6rem;
+    width: 8rem;
+}
+.border-0:hover{
+    transform: scale(2);
+    background-color: transparent;
+}
+.table{
+    background-color: rgb(88, 178, 88);
+}
+.header th{
+    background-color: green;
+}
